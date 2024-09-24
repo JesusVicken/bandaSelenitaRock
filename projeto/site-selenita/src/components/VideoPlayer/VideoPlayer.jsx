@@ -38,7 +38,7 @@ const VideoPlayer = () => {
     return (
         <VideoContainer>
             <VideoFrame
-                src="https://www.youtube.com/embed/AS6xQiJI3ok?autoplay=1&mute=0" // Adiciona autoplay e mute
+                src="https://www.youtube.com/embed/AS6xQiJI3ok?autoplay=1&mute=1" // Adiciona autoplay e mute
                 title="Vídeo do YouTube"
                 allowFullScreen // Permite tela cheia
             />
