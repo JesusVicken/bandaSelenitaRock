@@ -2,6 +2,16 @@
 import React from 'react';
 import { Container, Grid, Paper, Typography } from '@mui/material';
 import styled from 'styled-components';
+import guitarImage from '../../assets/guitar.jpg'; // Importa a imagem
+import tshirtImage from '../../assets/tshirt.jpg'; // Importa a imagem
+import selenita from '../../assets/selenita.jpg'; // Importa a imagem
+import rock from '../../assets/rock.jpg'; // Importa a imagem
+import music from '../../assets/music.jpg'; // Importa a imagem
+import banda from '../../assets/banda.jfif'; // Importa a imagem
+import heranca from '../../assets/heranca.jpg'; // Importa a imagem
+import borabora from '../../assets/borabora.jpg'; // Importa a imagem
+import bg from '../../assets/bg.jpg'; // Importa a imagem
+
 
 // Estilo para o Paper (Frame)
 const StyledPaper = styled(Paper)`
@@ -15,14 +25,15 @@ const StyledPaper = styled(Paper)`
 
 // Lista fictícia de URLs de imagens do Instagram
 const imageUrls = [
-    "https://via.placeholder.com/200",
-    "https://via.placeholder.com/200/ff7f7f",
-    "https://via.placeholder.com/200/7f7fff",
-    "https://via.placeholder.com/200/7fff7f",
-    "https://via.placeholder.com/200/ffff7f",
-    "https://via.placeholder.com/200/ff7fff",
-    "https://via.placeholder.com/200/7f7f7f",
-    "https://via.placeholder.com/200/ffffff",
+    guitarImage, // Adiciona a imagem guitar.jpg
+    tshirtImage,
+    selenita,
+    rock,
+    music,
+    banda,
+    heranca,
+    borabora,
+    bg,
 ];
 
 // Componente principal
