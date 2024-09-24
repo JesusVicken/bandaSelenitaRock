@@ -2,25 +2,29 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
 
-// Animação de entrada
-const fadeIn = keyframes`
-  from {
-    opacity: 0;
-    transform: translateY(20px);
+// Animação de quique
+const bounce = keyframes`
+  0% {
+    transform: translateY(-1000px); // Começa fora da tela
   }
-  to {
-    opacity: 1;
-    transform: translateY(0);
+  60% {
+    transform: translateY(30px); // Quica para cima
+  }
+  75% {
+    transform: translateY(-10px); // Quica para baixo
+  }
+  100% {
+    transform: translateY(0); // Para na posição final
   }
 `;
 
 // Estilo para o contêiner do vídeo
 const VideoContainer = styled.div`
   max-width: 800px; // Largura máxima do vídeo
-  margin: 100px auto; // Aumenta a margem superior para 100px
+  margin: 50px auto; // Centraliza o vídeo
   border-radius: 10px; // Bordas arredondadas
   overflow: hidden; // Oculta partes do vídeo que saem do contêiner
-  animation: ${fadeIn} 0.8s ease-out; // Animação de entrada
+  animation: ${bounce} 2s ease; // Animação de quique
 `;
 
 // Estilo para o iframe do vídeo
@@ -34,7 +38,7 @@ const VideoPlayer = () => {
     return (
         <VideoContainer>
             <VideoFrame
-                src="https://www.youtube.com/embed/AS6xQiJI3ok?autoplay=1&mute=1" // Adiciona autoplay e mute
+                src="https://www.youtube.com/embed/AS6xQiJI3ok?autoplay=1&mute=0" // Adiciona autoplay e mute
                 title="Vídeo do YouTube"
                 allowFullScreen // Permite tela cheia
             />
