@@ -5,7 +5,7 @@ import StickyPlayerButton from '../StickyPlayerButton/StickyPlayerButton'; // At
 
 const Home = () => {
     return (
-        <div style={{ marginTop: '6.5%' }}>
+        <div style={{ marginTop: '6.5%', marginLeft: '5%' }}>
             <VideoPlayer />
             {/* Outros componentes da página inicial */}
             <StickyPlayerButton
