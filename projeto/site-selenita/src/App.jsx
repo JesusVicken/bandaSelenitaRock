@@ -9,6 +9,7 @@ import Gallery from './components/Gallery/Gallery';
 import Loading from './components/Loading/Loading';
 import './App.css';
 import Home from './components/Home/Home';
+import Footer from './components/Footer/Footer';
 
 const App = () => {
   const [loading, setLoading] = useState(true); // Estado para controlar o loading
@@ -34,8 +35,12 @@ const App = () => {
           <Route path="/tour" element={<Tour />} />
           <Route path="/gallery" element={<Gallery />} />
         </Routes>
+
       )}
+
+      <Footer />
     </Router>
+
   );
 };
 

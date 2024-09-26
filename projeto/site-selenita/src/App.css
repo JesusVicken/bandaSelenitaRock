@@ -1,15 +1,59 @@
-/* src/App.css */
 body {
     margin: 0;
     padding: 0;
-    height: 110vh;
-    /* Para garantir que o fundo cubra toda a altura da tela */
-    background-image: url('./assets/bg.jpg');
-    /* Caminho relativo à pasta src */
+    min-height: 100vh;
+    /* Garante que o conteúdo ocupe toda a altura da tela */
+    display: flex;
+    flex-direction: column;
+    /* Faz o conteúdo se alinhar verticalmente */
+    justify-content: space-between;
+    /* Garante que o footer fique no final */
+    font-family: 'Arial', sans-serif;
+    /* Definição de fonte mais suave */
+    color: #f5f5f5;
+    /* Cor padrão do texto */
+    background: linear-gradient(rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.6)), url('./assets/bg.jpg') no-repeat center center fixed;
+    /* Adiciona uma sobreposição escura */
     background-size: cover;
-    /* Para cobrir toda a área */
-    background-position: center;
-    /* Para centralizar a imagem */
-    background-repeat: no-repeat;
-    /* Para não repetir a imagem */
+    /* Garante que a imagem cubra toda a área visível */
+    overflow: hidden;
+}
+
+main {
+    flex: 1;
+    /* O conteúdo principal expande para preencher o espaço */
+    padding: 20px;
+    /* Espaçamento interno para o conteúdo */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #ffffff;
+    /* Garante que os títulos sejam legíveis sobre o fundo escuro */
+    margin-bottom: 20px;
+    /* Espaçamento entre os títulos */
+}
+
+p {
+    line-height: 1.6;
+    /* Melhora a legibilidade dos parágrafos */
+    margin-bottom: 20px;
+}
+
+a {
+    color: #ff9f1c;
+    /* Cor de destaque para links */
+    text-decoration: none;
+    /* Remove o sublinhado dos links */
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #ffffff;
+    /* Muda a cor ao passar o mouse */
 }

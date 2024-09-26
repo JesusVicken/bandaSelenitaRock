@@ -77,7 +77,7 @@ const LoadingBarContainer = styled.div`
 const LoadingBar = styled.div`
   height: 100%;
   width: 0; // Inicialmente, a largura é 0
-  background-color: #ee1b10; // Cor da barra de carregamento
+  background-color: #178d0a; // Cor da barra de carregamento
   animation: loading 5s linear infinite; // Animação de carregamento
 
   @keyframes loading {

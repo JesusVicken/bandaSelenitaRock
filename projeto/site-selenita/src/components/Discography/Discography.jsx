@@ -33,7 +33,7 @@ const AlbumList = styled.ul`
 const AlbumItem = styled.li`
   margin-bottom: 20px;
   padding: 15px;
-  border: 1px solid #ee1b10; // Borda vermelha
+  border: 1px solid #1ec218; // Borda vermelha
   border-radius: 8px; // Bordas arredondadas
   background-color: rgba(255, 255, 255, 0.9); // Fundo semi-transparente
 `;
@@ -42,6 +42,8 @@ const AlbumItem = styled.li`
 const AlbumTitle = styled.h2`
   font-size: 1.8em;
   margin: 0;
+    color: black; // Cor preta para o título e ano
+
 `;
 
 // Estilos da descrição
@@ -51,43 +53,44 @@ const AlbumDescription = styled.p`
 `;
 
 const Discography = () => {
-    // Lista fictícia de álbuns
-    const albums = [
-        {
-            title: "Caminhos da Luz",
-            year: 2016,
-            description: "O álbum de estreia da Banda Luziana que traz uma mistura de sons do sertanejo e rock, com letras que falam sobre a vida no campo."
-        },
-        {
-            title: "Reflexos do Coração",
-            year: 2018,
-            description: "Um álbum mais maduro, explorando temas de amor e relacionamentos, com arranjos sofisticados e uma sonoridade envolvente."
-        },
-        {
-            title: "Ritmos da Terra",
-            year: 2020,
-            description: "Um trabalho que celebra as raízes culturais do Brasil, incorporando ritmos tradicionais e contemporâneos."
-        },
-        {
-            title: "Viagem Sonora",
-            year: 2022,
-            description: "Um álbum conceitual que leva os ouvintes a uma jornada musical através de diferentes emoções e paisagens sonoras."
-        },
-    ];
+  // Lista de álbuns da Banda Selenita
+  const albums = [
+    {
+      title: "Luz da Lua (Single)",
+      year: 2024,
+      description: "Lançado como um single, 'Luz da Lua' explora novos territórios sonoros com elementos de música eletrônica, mantendo o estilo cósmico característico da banda."
+    },
+    {
+      title: "Selenita ao Vivo - Acústico",
+      year: 2023,
+      description: "Uma performance acústica intimista gravada ao vivo, apresentando versões minimalistas das faixas mais populares da banda."
+    },
+    {
+      title: "Cosmos e Caos",
+      year: 2022,
+      description: "O segundo álbum explora temas sobre a dualidade do universo e a jornada humana entre o caos e a ordem. Com um som mais maduro, a banda mistura riffs marcantes com atmosferas experimentais."
+    },
+    {
+      title: "Eclipse Lunar",
+      year: 2020,
+      description: "O primeiro álbum de estúdio da Banda Selenita, trazendo uma combinação de rock alternativo com influências psicodélicas e atmosferas espaciais."
+    },
+  ];
 
-    return (
-        <DiscographyContainer>
-            <Title>Discografia</Title>
-            <AlbumList>
-                {albums.map((album, index) => (
-                    <AlbumItem key={index}>
-                        <AlbumTitle>{album.title} ({album.year})</AlbumTitle>
-                        <AlbumDescription>{album.description}</AlbumDescription>
-                    </AlbumItem>
-                ))}
-            </AlbumList>
-        </DiscographyContainer>
-    );
+
+  return (
+    <DiscographyContainer>
+      <Title>Discografia</Title>
+      <AlbumList>
+        {albums.map((album, index) => (
+          <AlbumItem key={index}>
+            <AlbumTitle>{album.title} ({album.year})</AlbumTitle>
+            <AlbumDescription>{album.description}</AlbumDescription>
+          </AlbumItem>
+        ))}
+      </AlbumList>
+    </DiscographyContainer>
+  );
 };
 
 export default Discography;
