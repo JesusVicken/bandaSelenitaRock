@@ -2,7 +2,7 @@
 import React from 'react';
 import Draggable from 'react-draggable';
 import { IconButton } from '@mui/material';
-import FaceIcon from '@mui/icons-material/Face'; // Ícone de face
+import PlayCircleFilledOutlinedIcon from '@mui/icons-material/PlayCircleFilledOutlined'; // Ícone de player
 
 const StickyPlayerButton = ({ link }) => {
     return (
@@ -12,7 +12,7 @@ const StickyPlayerButton = ({ link }) => {
                 aria-label="Play Music"
                 style={{ position: 'absolute', zIndex: 1000, color: 'green' }} // Define a cor verde
             >
-                <FaceIcon fontSize="large" />
+                <PlayCircleFilledOutlinedIcon fontSize="large" />
             </IconButton>
         </Draggable>
     );
