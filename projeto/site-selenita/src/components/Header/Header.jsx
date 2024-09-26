@@ -43,7 +43,7 @@ const Header = () => {
         <StyledAppBar position="static">
             <Toolbar>
                 <BrandTypography variant="h6">
-                    BandaSelenita
+                    Banda    Selenita
                 </BrandTypography>
                 <NavLink component={Link} to="/">
                     Início
